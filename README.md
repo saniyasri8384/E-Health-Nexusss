@@ -1,56 +1,73 @@
-# E-Health Nexus
+<p align="center">
+  <a href="https://github.com/lucide-icons/lucide">
+    <img src="https://lucide.dev/package-logos/lucide-react.svg" alt="Lucide icon library for React applications." width="540">
+  </a>
+</p>
 
-A comprehensive healthcare platform connecting patients and doctors for appointment booking and management.
+<p align="center">
+Lucide icon library for React applications.
+</p>
 
-## Running the Application
+<div align="center">
 
-1. Start the application using the `start.bat` file:
-   - Double-click `start.bat` or run it from the command prompt
-   - This will start both the backend server (on port 5000) and frontend server (on port 3000)
+  [![npm](https://img.shields.io/npm/v/lucide-react?color=blue)](https://www.npmjs.com/package/lucide-react)
+  ![NPM Downloads](https://img.shields.io/npm/dw/lucide-react)
+  [![GitHub](https://img.shields.io/github/license/lucide-icons/lucide)](https://lucide.dev/license)
+</div>
 
-2. Access the application:
-   - Open your browser and go to `http://localhost:3000`
-   - The backend API is accessible at `http://localhost:5000`
+<p align="center">
+  <a href="https://lucide.dev/guide/">About</a>
+  ·
+  <a href="https://lucide.dev/icons/">Icons</a>
+  ·
+  <a href="https://lucide.dev/guide/packages/lucide-react">Documentation</a>
+  ·
+  <a href="https://lucide.dev/license">License</a>
+</p>
 
-## Troubleshooting "Failed to Fetch" Errors
+# Lucide React
 
-If you encounter "Failed to Fetch" errors in the application, try the following solutions:
+Implementation of the lucide icon library for React applications.
 
-1. **Make sure the backend server is running:**
-   - Check if the backend terminal window is open and shows "server started"
-   - If not, run `cd backend && npm run dev` in a terminal
+## Installation
 
-2. **Verify MongoDB Connection:**
-   - Ensure MongoDB is running
-   - Check the backend terminal for "database connected" message
-   - If you see database connection errors, verify your MongoDB URI in the `.env` file
+```sh
+pnpm add lucide-react
+```
 
-3. **Test API Connectivity:**
-   - When logged in as a user, use the "Test API Connection" button in the sidebar to diagnose connectivity issues
-   - Check browser console (F12) for detailed error messages
+```sh
+npm install lucide-react
+```
 
-4. **Browser Console Errors:**
-   - Open your browser's developer tools (F12)
-   - Check the console tab for specific error messages
-   - Common errors include CORS issues, network errors, or authentication problems
+```sh
+yarn add lucide-react
+```
 
-5. **CORS Issues:**
-   - If seeing CORS errors, ensure the backend CORS settings are properly configured
-   - The backend should have `app.use(cors({ origin: '*' }))` in `index.js`
+```sh
+bun add lucide-react
+```
 
-6. **Authentication Issues:**
-   - Ensure you're properly logged in and have a valid token
-   - Try logging out and logging back in
-   - Clear browser cache and cookies if issues persist
+## Documentation
 
-7. **Server Unavailable:**
-   - If you can't access http://localhost:5000 directly in your browser
-   - Restart the backend server or check if it's running on a different port
+For full documentation, visit [lucide.dev](https://lucide.dev/guide/packages/lucide-react)
 
-## Component Reference
+## Community
 
-- **/frontend/src/app/user-dashboard/page.jsx** - User dashboard to book appointments and view doctors
-- **/frontend/src/app/doctor/appointments/page.jsx** - Doctor's appointment management view
-- **/backend/routers/slotRouter.js** - All slot/appointment-related backend routes
-- **/backend/routers/DoctorRouter.js** - Doctor-related routes
-- **/backend/routers/Patient.js** - Patient-related routes
+Join the [Discord server](https://discord.gg/EH6nSts) to chat with the maintainers and other users.
+
+## License
+
+Lucide is licensed under the ISC license. See [LICENSE](https://lucide.dev/license).
+
+## Sponsors
+
+<a href="https://vercel.com?utm_source=lucide&utm_campaign=oss">
+  <img src="https://lucide.dev/vercel.svg" alt="Powered by Vercel" width="200" />
+</a>
+
+<a href="https://www.digitalocean.com/?refcode=b0877a2caebd&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge"><img src="https://lucide.dev/digitalocean.svg" width="200" alt="DigitalOcean Referral Badge" /></a>
+
+### Awesome backers 🍺
+
+<a href="https://www.scipress.io?utm_source=lucide"><img src="https://lucide.dev/sponsors/scipress.svg" width="180" alt="Scipress sponsor badge" /></a>
+<a href="https://github.com/pdfme/pdfme"><img src="https://lucide.dev/sponsors/pdfme.svg" width="180" alt="pdfme sponsor badge" /></a>
